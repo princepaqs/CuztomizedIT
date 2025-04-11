@@ -1,0 +1,78 @@
+/* styles.css */
+div::-webkit-scrollbar {
+  display: none;  /* Safari and Chrome */
+}
+html, body {
+  overflow: hidden; /* Hide scrollbars for entire page */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Full viewport height */
+  overflow: hidden; /* Ensures no scrollbars for the slider */
+}
+
+/* Additional styles as needed */
+
+
+.slider-images {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+}
+
+.slider-image {
+  min-width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover the container */
+}
+
+.slider-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0,0,0,0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+  border-radius: 50%; /* Make the button rounded */
+  width: 40px; /* Set a fixed width */
+  height: 40px; /* Set a fixed height */
+  display: flex; /* Center the icon */
+  align-items: center;
+  justify-content: center;
+  opacity: 0; /* Hide the buttons by default */
+  transition: opacity 0.5s ease; /* Smooth transition for showing/hiding */
+}
+
+.slider-button.prev {
+  left: 10px;
+}
+
+.slider-button.next {
+  right: 10px;
+}
+
+.slider:hover .slider-button {
+  opacity: 1; /* Show the buttons when hovering over the slider */
+}
+
+/* Transparent black overlay */
+.slider-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black with 40% opacity */
+  pointer-events: none; /* Allow clicks to pass through */
+  z-index: 5; /* Position the overlay below the buttons */
+}
