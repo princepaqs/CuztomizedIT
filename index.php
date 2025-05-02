@@ -1,10 +1,19 @@
+<?php
+require_once 'visitor.php';
+updateVisitorCount();
+
+$visitCount = getVisitorCount();
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CuztomizeIT</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" type="image/png" href="assets/cuzlogo.jpg">
 </head>
@@ -246,7 +255,7 @@
             </svg>
             <a class="text-xs" href="">Facebook</a>
           </div>
-           <div class="flex flex-row items-center justify-start gap-1">
+          <div class="flex flex-row items-center justify-start gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
               <g fill="#ffffff">
                 <g transform="scale(8,8)">
@@ -264,8 +273,8 @@
                 </g>
               </g>
             </svg>
-            <a class="text-sm" href="">Twitter</a>
-          </div> 
+            <a class="text-sm" href="https://x.com/PrinceYGG">Twitter</a>
+          </div>
         </div>
       </div>
       
@@ -277,7 +286,6 @@
 </footer>   
     </div>
   </div>
-  <script src="script.js" >
-  </script>
-</body>
+  <script src="script.js" ></script>
+
 </html>
