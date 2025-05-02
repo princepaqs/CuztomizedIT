@@ -14,24 +14,17 @@
 
     <div class="flex flex-col min-w-0 flex-1  ">
      
-      <nav class="fixed top-0 left-0 right-0 z-50 lg:flex items-center justify-between lg:flex-wrap bg-[#272c2b] py-2 px-8 shadow-lg lg:block hidden m-2 rounded-lg">
+      <nav class="fixed top-0 left-0 right-0 z-50  flex flex-row items-center justify-between bg-[#272c2b] py-2 px-8 shadow-lg block m-2 rounded-lg">
         <div class="flex items-center flex-shrink-0 text-[#f99810] mr-6 gap-4">
-        <img class="w-12 h-10" src="./assets/cuzlogo.jpg">
+          <img class="w-12 h-10" src="./assets/cuzlogo.jpg">
           <div class="flex flex-col font-semibold">
             <span class="font-semibold text-3xl tracking-tight flex flex-row">Cuztomize<p class="text-white">IT</p> </span>
             <span class="text-[11px] text-white flex flex-row gap-1"> “We <p class="text-orange-500"><i>BUILD</i></p> the <p class="text-red-500 font-semibold"><i>RIGHT</i></p> Solution!”</span>
           </div>
         </div>
-        <div class="block lg:hidden">
-          <button id="sidebar-toggle" class="flex items-center px-3 py-2 text-white ">
-            <svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-              <title>Menu</title>
-              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/>
-            </svg>
-          </button>
-        </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end menu-links hidden sidebar pr-28 mr-20">
-          <div class="text-sm lg:flex gap-10">
+
+        <div>
+          <div class="text-sm flex flex-row items-center gap-10 pr-20 mr-20">
             <div>
               <a href="#home" class="flex flex-row items-center text-white hover:text-[#f99810] gap-1 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-4">
@@ -57,8 +50,9 @@
             </div>
           </div>
         </div>
-        <div class="w-full block flex-grow lg:flex lg:items-center lg:w-auto justify-end menu-links hidden sidebar">
-          <div class="text-[10px] lg:text-xs lg:flex gap-5">
+
+        <div>
+          <div class="text-sm lg:text-xs lg:flex gap-5">
             <a href="#contact" class="flex flex-row items-center text-white hover:text-[#f99810] gap-1 cursor-pointer">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4"><path fill-rule="evenodd" d="M4.5 3.75a3 3 0 0 0-3 3v10.5a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V6.75a3 3 0 0 0-3-3h-15Zm4.125 3a2.25 2.25 0 1 0 0 4.5 2.25 2.25 0 0 0 0-4.5Zm-3.873 8.703a4.126 4.126 0 0 1 7.746 0 .75.75 0 0 1-.351.92 7.47 7.47 0 0 1-3.522.877 7.47 7.47 0 0 1-3.522-.877.75.75 0 0 1-.351-.92ZM15 8.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15ZM14.25 12a.75.75 0 0 1 .75-.75h3.75a.75.75 0 0 1 0 1.5H15a.75.75 0 0 1-.75-.75Zm.75 2.25a.75.75 0 0 0 0 1.5h3.75a.75.75 0 0 0 0-1.5H15Z" clip-rule="evenodd"></path></svg>
               Contact Us
@@ -68,7 +62,7 @@
       </nav>
 
       <div class="flex items-center justify-center w-1/2">
-        <div class="fixed bottom-0 left-0 right-0 z-50 text-white lg:hidden bg-[#272c2b] py-4 px-10 m-2 rounded-lg shadow-lg flex justify-between items-center">
+        <div class="fixed bottom-0 left-0 right-0 z-50 text-white md:hidden lg:hidden bg-[#272c2b] py-4 px-10 m-2 rounded-lg shadow-lg flex justify-between items-center">
         <div class="flex flex-row items-center justify-center md:justify-between gap-10 w-full" >
           <div class="flex items-center flex-shrink-0 text-[#f99810] mr-6 hidden md:flex">
           
@@ -155,7 +149,7 @@
             
             <div class="flex-none flex flex-col items-center justify-center">
               <img class="w-full h-40 object-cover rounded-md" src="./assets/platform1.jpg" alt="Product 1">
-              <p class="font-semibold text-gray-600 text-sm">Business/Corporate Website</p>
+              <p class="font-semibold text-gray-600 text-sm">Corporate Website</p>
             </div>
 
             <div class="flex-none flex flex-col items-center justify-center">
@@ -176,7 +170,7 @@
 
             <div class="flex-none flex flex-col items-center justify-center">
               <img class="w-full h-40 object-cover rounded-md" src="./assets/cuz-software.jpg" alt="Product 1">
-              <p class="font-semibold text-gray-600 text-sm">Cuztomize Software</p>
+              <p class="font-semibold text-gray-600 text-sm">Customize Software</p>
             </div>
         </div>
       </div>
@@ -200,7 +194,7 @@
             </div>
             <div class="border-b pb-4">
               <h3 class="font-semibold text-gray-700">4. Did you offer a support demo?</h3>
-              <p class="text-gray-600">Yes, we can provide a support demo for our product, contact or email us in <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@cuztomizeit.com" class="text-[#f99810] underline" target="_blank" rel="noopener noreferrer">sales@cuztomizeit.com</a> for schedule.
+              <p class="text-gray-600">Yes, we can provide a software demo for our product, contact or email us in <a href="https://mail.google.com/mail/?view=cm&fs=1&to=sales@cuztomizeit.com" class="text-[#f99810] underline" target="_blank" rel="noopener noreferrer">sales@cuztomizeit.com</a> for schedule.
               </p>
             </div>
           </div>
@@ -208,7 +202,7 @@
         </div>
 
   
-        <div id="contact" class="flex flex-col items-center justify-center pb-20 pt-28 ">F
+        <div id="contact" class="flex flex-col items-center justify-center pb-20 pt-28 ">
           <div class="w-full">
             <h1 class="text-2xl lg:text-2xl font-bold text-start">Contact Us</h1>     
             <div class="py-4 flex items-center justify-center">
@@ -229,15 +223,16 @@
       </div>
       <footer class="w-full lg:px-20 pt-5 lg:pt-10 pb-14 md:pb-14 lg:pb-0 bg-[#272c2b]">
     <div class="flex flex-col lg:flex-row items-center justify-between text-white pb-5">
-      <div class="h-1/3 w-full lg:w-1/3 px-10 lg:px-28 py-2">
+      <div class="h-1/2 w-full lg:w-1/3 px-10 lg:px-28 py-2">
         <h1 class="text-xl pb-4 font-bold">CuztomizeIT</h1>
         <p class="text-sm">Bignay, Valenzuela City</p>
       </div>
-      <div class="h-1/3 w-full lg:w-1/3 flex flex-col px-10 py-2">
+      <div class="h-1/2 w-full lg:w-1/3 flex flex-col px-10 py-2">
         <h1 class="text-xl pb-4 font-bold">Contact Us</h1>
         <p class="text-sm">sales@cuztomizeit.com</p>
         <p class="text-sm">Tel. # (02) 8671-1778</p>
       </div>
+      
       <div class="h-1/3 w-full lg:w-1/3 flex flex-col px-10 py-2">
         <h1 class="text-xl pb-4 font-bold">We are social</h1>
         <div class="flex flex-col items-start">
@@ -249,9 +244,9 @@
                 </g>
               </g>
             </svg>
-            <a class="text-xs" href="https://cuztomizeit.com/index.html">Webpage</a>
+            <a class="text-xs" href="">Facebook</a>
           </div>
-          <!-- <div class="flex flex-row items-center justify-start gap-1">
+           <div class="flex flex-row items-center justify-start gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
               <g fill="#ffffff">
                 <g transform="scale(8,8)">
@@ -259,7 +254,7 @@
                 </g>
               </g>
             </svg>
-            <a class="text-xs" href="https://www.linkedin.com/in/prince-louie-paquiado-4748b0326/">LinkedIn</a>
+            <a class="text-xs" href="">LinkedIn</a>
           </div>
           <div class="flex flex-row items-center justify-start gap-1">
             <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,256,256">
@@ -269,10 +264,11 @@
                 </g>
               </g>
             </svg>
-            <a class="text-sm" href="https://x.com/PrinceYGG">Twitter</a>
-          </div> -->
+            <a class="text-sm" href="">Twitter</a>
+          </div> 
         </div>
       </div>
+      
     </div>
   <!-- Copyright section -->
   <div class="flex justify-center text-sm text-gray-400 border-t border-gray-600 py-5 px-10 ">
